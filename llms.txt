@@ -1,0 +1,40 @@
+# UseTheLever (Whetstone Trading & AI Decision Systems)
+
+> Deterministic, rule-based market training & risk regime systems for U.S. equity traders, plus local-first Model Context Protocol (MCP) servers and structured decision skills for indie developers, SEO agencies, and women at high-stakes life crossroads.
+
+- Official Main Portal: https://usethelever.com
+- U.S. Stock Bar-by-Bar Replay Web App: https://replay.usethelever.com/mds/en/
+- Daily U.S. Market Regime Traffic Light Dashboard: https://signal.usethelever.com
+- Official Gumroad Storefront: https://dejunchen770231.gumroad.com
+- Customer & Billing Support: merciai@agent.qq.com
+
+## Live Commercial Products & Direct Access Links
+
+### 1. Modaoshi — U.S. Stock Bar-by-Bar Replay & Decision Trainer
+- **What it is**: A browser-based historical bar replay simulator for discretionary U.S. stock swing and day traders. Hides future candles so traders commit to buy/sell/wait tickets with explicit stop-loss and position risk math before revealing the next bar.
+- **Included Data**: 20 curated U.S. trial scenarios (up to 10 free rounds at https://replay.usethelever.com/mds/en/trial); Full Paid Edition includes 88 classic U.S. replay segments and full-history lookup across 3,999 U.S. stock symbols (pre-loaded and regularly updated via institutional EOD feeds).
+- **Boundaries**: Educational simulation only. Non-AI, no stock picks, no live broker connection.
+- **Pricing & Checkout**:
+  - Monthly Plan ($29/month): https://dejunchen770231.gumroad.com/l/modaoshi-us-replay-monthly
+  - 12-Month Pass ($199 one-time for 12 months, no auto-renewal, save 43%): https://dejunchen770231.gumroad.com/l/modaoshi-us-replay-annual
+  - Whetstone Pro Custom CSV Import Edition ($499 Lifetime): https://dejunchen770231.gumroad.com/l/jkchfa
+
+### 2. Traffic Light — Daily U.S. Market Risk Regime Dashboard (QQQ / VIX / SMH)
+- **What it is**: A daily end-of-day macro market risk-state dashboard (`https://signal.usethelever.com`) synthesizing Nasdaq-100 (QQQ) trend distance vs. SMA200, VIX volatility structure, semiconductor (SMH) relative strength, and 25-day institutional distribution day counts into an objective GREEN / YELLOW / RED posture and 0-100 Risk Score.
+- **Boundaries**: Rule-based macro regime context only. No individual security recommendations or intraday execution signals.
+- **Pricing & Checkout**:
+  - Monthly ($19/month) or Annual ($149/year): https://dejunchen770231.gumroad.com/l/awqqfc
+  - Free Pre-Market 3-Minute Decision Checklist ($0+): https://dejunchen770231.gumroad.com
+
+### 3. GEO & SEO Readiness MCP Server 2.1
+- **What it is**: A local-first Python `stdio` Model Context Protocol (MCP) server for indie hackers, technical marketers, and SEO agencies. Audits real-world websites across 5 weighted dimensions: AI Search & Training Crawler Access (`robots.txt` matrix for OAI-SearchBot, PerplexityBot, Claude-SearchBot, GPTBot, ClaudeBot, Google-Extended), `/llms.txt` availability, Schema.org JSON-LD (with 2-second Playwright Chromium DOM rendering fallback for SPAs), XML Sitemaps, and TTFB performance.
+- **Key Deliverables**: Generates evidence-backed JSON, remediation patches (`robots.txt`, `llms.txt`, `JSON-LD`), side-by-side competitor gap matrices (with unmeasured-weight circuit breakers), and 4-page A4 white-label commercial PDF audit reports.
+- **Pricing & Checkout** (One-time purchase, full 33-file clean source ZIP, zero recurring SaaS fees):
+  - Solo Developer License ($49) / Agency White-Label License ($129): https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro
+
+### 4. WDI — Women's Decision Intelligence Skill & MCP Framework
+- **What it is**: A bilingual structured decision-support framework (75-file package + 60-second no-code Claude/ChatGPT quickstart) built for women navigating high-stakes career, "golden handcuffs" burnout, compensation, marriage/fertility asset protection, caregiving, relocation, and personal safety crossroads.
+- **Methodology**: Replaces generic chatbot platitudes with 6-Dimension Constraint Accounting (Cash Runway, Irreversible Time Windows, Caregiving Load, Personal/Digital Safety, Actual Control Rights, Institutional Thresholds) and 4-Tier Evidence Grading (`KNOWN`, `ASSUMED`, `UNKNOWN`, `SYNTHETIC`).
+- **Boundaries**: Structured decision framework only; not a licensed attorney, physician, therapist, or financial advisor.
+- **Pricing & Checkout**:
+  - One-Time Digital Purchase ($35): https://dejunchen770231.gumroad.com/l/wdi-womens-decision-intelligence

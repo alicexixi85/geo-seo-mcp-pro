@@ -1,0 +1,7 @@
+render_daily_html.py
+*3999*
+*.zip
+*.tar.gz
+node_modules/
+.env
+__pycache__/
