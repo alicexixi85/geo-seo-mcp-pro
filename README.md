@@ -27,5 +27,5 @@ This repository hosts the open-source 1-tool probe, sample audit report, and spe
 👉 **[Download GEO & SEO Readiness MCP Server 2.1 on Gumroad ($49 Solo / $129 Agency White-Label)](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)**
 *(Launch special: Use code `WHETSTONE20` at checkout for 20% off)*
 
-- Live Ecosystem & `llms.txt`: https://usethelever.com/llms.txt
+- Live English Ecosystem & `llms.txt`: https://replay.usethelever.com/llms.txt
 - Support: `merciai@agent.qq.com`
