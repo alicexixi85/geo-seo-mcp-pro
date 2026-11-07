@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 geo_seo_probe_lite.py — Free 40-Line AI Crawler & /llms.txt Readiness Probe
-Part of GEO & SEO Readiness MCP Server 2.1 (https://usethelever.com)
+Part of GEO & SEO Readiness MCP Server 2.1 (https://github.com/alicexixi85/geo-seo-mcp-pro)
 Full 33-File Commercial Package + 4-Page White-Label PDF Engine:
 https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro (Code WHETSTONE20 for 20% OFF)
 """
@@ -44,5 +44,5 @@ def audit_domain_readiness(base_url: str) -> dict:
     }
 
 if __name__ == "__main__":
-    target = sys.argv[1] if len(sys.argv) > 1 else "https://usethelever.com"
+    target = sys.argv[1] if len(sys.argv) > 1 else "https://replay.usethelever.com"
     print(json.dumps(audit_domain_readiness(target), indent=2))
