@@ -68,3 +68,5 @@ This repository is the free, MIT-licensed Lite server. A separate paid edition (
 ## License
 
 MIT. Built by [@alicexixi85](https://github.com/alicexixi85). Issues and pull requests welcome.
+
+<!-- mcp-name: io.github.alicexixi85/geo-seo-mcp-pro -->
