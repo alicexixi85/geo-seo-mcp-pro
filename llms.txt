@@ -1,27 +1,14 @@
-# UseTheLever — U.S. Equity Trading Tools & Deterministic AI MCP Servers
+# GEO & SEO Readiness MCP — Lite
 
-> Official English Product Suite: Interactive U.S. stock historical bar-by-bar replay trainer, daily U.S. market risk regime dashboard, and deterministic Model Context Protocol (MCP) servers.
+> Open-source, MIT-licensed Model Context Protocol (stdio) server that checks whether a public website can be read and cited by AI search engines. Zero dependencies, Python 3.10+.
 
-## 1. Modaoshi — U.S. Stock Bar-by-Bar Replay Trainer
-- **Official English Web App**: https://replay.usethelever.com
-- **Free 20-Segment Interactive Trial (No Card Required)**: https://replay.usethelever.com/mds/en/trial
-- **Member Login Portal**: https://replay.usethelever.com/mds/en/login
-- **Core Capabilities**: 88 curated historical U.S. stock scenarios PLUS full historical replay access across 3,999 U.S. stock symbols. Supports blind mode, simulated order tickets (BUY/SELL/ADD/REDUCE/WAIT) with stop-loss and thesis logging, post-session discipline & risk audit reports, training archive, mistake replay, and U.S. CSV import.
-- **Gumroad Annual Pass ($199 / 12 Months, No Auto-Renewal)**: https://dejunchen770231.gumroad.com/l/modaoshi-us-replay-annual
-- **Gumroad Monthly Subscription ($29/mo)**: https://dejunchen770231.gumroad.com/l/modaoshi-us-replay-monthly
+## Tools
+- [quick_readiness_report](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): runs all checks and returns a prioritized fix list
+- [check_ai_crawler_access](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): robots.txt rules for AI search crawlers, AI training crawlers, Googlebot and Bingbot
+- [check_llms_txt](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): presence and structure of /llms.txt
+- [extract_structured_data](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): JSON-LD types, canonical and og:url host checks
+- [check_sitemap](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): sitemap discovery and URL count
 
-## 2. Traffic Light — Daily U.S. Market Risk Regime Dashboard
-- **Official Live English Dashboard**: https://signal.usethelever.com
-- **Core Capabilities**: Daily U.S. equity macro risk-status overview (Green / Yellow / Red regimes) tracking QQQ, breadth, and volatility structure. Self-serve informational tool; not investment advice or live trade signals.
-- **Gumroad Official Access**: https://dejunchen770231.gumroad.com/l/awqqfc
-
-## 3. GEO & SEO Readiness MCP Server 2.1 Pro
-- **GitHub Repository**: https://github.com/alicexixi85/geo-seo-mcp-pro
-- **Gumroad Pro Package**: https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro
-
-## 4. WDI — Women's Decision Intelligence MCP
-- **GitHub Repository**: https://github.com/alicexixi85/wdi-decision-mcp
-- **Gumroad Official Package**: https://dejunchen770231.gumroad.com/l/wdi-womens-decision-intelligence
-
-## Support & Verification
-- **Official Support Email**: merciai@agent.qq.com
+## Links
+- [Source code](https://github.com/alicexixi85/geo-seo-mcp-pro)
+- [Commercial edition (SPA rendering, competitor comparison, white-label PDF)](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)

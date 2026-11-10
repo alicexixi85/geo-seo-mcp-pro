@@ -1,0 +1,18 @@
+[project]
+name = "geo-seo-readiness-mcp-lite"
+version = "1.0.0"
+description = "Open-source MCP server that checks AI-crawler access, llms.txt, JSON-LD, canonical tags and sitemaps."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/alicexixi85/geo-seo-mcp-pro"
+"Commercial edition" = "https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro"
+
+[project.scripts]
+geo-seo-readiness-mcp = "server:main"
+
+[tool.setuptools]
+py-modules = ["server", "mcp_stdio"]

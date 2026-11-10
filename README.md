@@ -1,31 +1,70 @@
-# GEO & SEO Readiness MCP Server 2.1 (`geo-seo-mcp-pro`)
+# GEO & SEO Readiness MCP — Lite
 
-**Stop paying $129/month for bloated legacy SEO subscriptions that don't even check if ChatGPT, Perplexity, or Claude can read your site.**
+An open-source [Model Context Protocol](https://modelcontextprotocol.io) server that checks whether a public website can be **read and cited by AI search engines** (ChatGPT Search, Perplexity, Claude) as well as classic search.
 
-`GEO & SEO Readiness MCP Server 2.1` is a local-first Python Model Context Protocol (`stdio`) server and automated white-label PDF report engine. It audits any target URL or competitor domain using verifiable HTTP and headless Chromium DOM evidence—never hallucinated scores or fake revenue-loss numbers.
+Ask your assistant *"Is example.com ready for AI search?"* and it runs five rule-based checks and returns a prioritized fix list. No API keys, no account, no dependencies beyond Python 3.10+.
 
-## Why We Built This
-1. **AI Search Blind Spots**: Traditional SEO tools ignore `/llms.txt` and fail to distinguish between AI search crawlers (`OAI-SearchBot`, `PerplexityBot`, `Claude-SearchBot`) and training scrapers (`GPTBot`, `ClaudeBot`, `Google-Extended`).
-2. **SPA Empty Shells**: Modern React/Next.js/Vue sites often return 0 readable characters and 0 JSON-LD schemas to static crawlers. Our engine includes a 2-second Playwright Chromium DOM observer to verify what actually renders.
-3. **Honest Engineering (Zero Hallucinated Metrics)**: If a target blocks probes or lacks a metric, the engine marks it `UNMEASURED`, re-normalizes measured weights, and trips a comparability circuit breaker rather than inventing fake scores.
+## Tools
 
-## What's in This Repository (Open-Source Probe & Sample Audit)
-- **`geo_seo_probe_lite.py`**: 45-line zero-dependency Python MCP probe that checks any domain's `/robots.txt` permissions across 6 major AI crawlers (`OAI-SearchBot`, `PerplexityBot`, `Claude-SearchBot`, `GPTBot`, `ClaudeBot`, `Google-Extended`) and verifies `/llms.txt` availability.
-- **`GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf`**: Real 4-page A4 white-label technical audit report comparing Midea (`midea.com/global`) vs. Haier (`haier.com/global`).
-- **`llms.txt`**: Standardized machine-readable discovery index.
+| Tool | What it checks |
+|---|---|
+| `quick_readiness_report` | Runs every check below and returns a `fix_first` list (FAIL before WARN). |
+| `check_ai_crawler_access` | `robots.txt` rules for the page path, split into **AI search crawlers** (`OAI-SearchBot`, `PerplexityBot`, `Claude-SearchBot`), **AI training crawlers** (`GPTBot`, `ClaudeBot`, `Google-Extended`, `CCBot`) and `Googlebot`/`Bingbot`. Blocking training crawlers is reported as a policy choice, not an error. |
+| `check_llms_txt` | Whether `/llms.txt` exists, is Markdown rather than an HTML soft-404, and has a title, sections and links. |
+| `extract_structured_data` | JSON-LD types (including `@graph`), invalid JSON-LD, `canonical` and `og:url` pointing to another host, missing meta description, and pages whose initial HTML is an almost-empty JavaScript shell. |
+| `check_sitemap` | Finds the sitemap from `robots.txt` or `/sitemap.xml`, detects `urlset` vs `sitemapindex`, counts URLs (reads up to 4 MiB, gzip supported). |
 
-## 5-Dimension Readiness Matrix
-- **Search & AI Crawler Policy (30%)**: RFC 9309 `robots.txt` evaluation across 6 major AI search & training bots.
-- **LLM-Readable Index (15%)**: Validates `/llms.txt` structure and HTTP status.
-- **Structured Data / Schema.org (25%)**: Extracts static and dynamically injected JSON-LD (`SoftwareApplication`, `FAQPage`, `Product`, `Organization`).
-- **XML Sitemaps (15%)**: Streaming parser supporting multi-megabyte child sitemaps without memory crashes.
-- **TTFB & Response Performance (15%)**: Real navigation timing measurement with optional HTTP/SOCKS5 proxy routing.
+Every finding is labelled `PASS`, `WARN`, `FAIL`, `INFO` or `UNMEASURED`. When a site blocks the request (403/429, timeouts), the check says `UNMEASURED` instead of guessing.
 
-## Get the Full Commercial Source Package + 4-Page White-Label PDF Engine
-This repository hosts the open-source 1-tool probe, sample audit report, and specification. The complete, production-ready **33-file commercial source package** (including all 4 MCP tools, bilingual EN/ZH 4-page A4 white-label PDF generator, Playwright SPA renderer, automated patch generator, and regression test suite) is available as a **one-time purchase (no recurring subscription)**:
+## Install
 
-👉 **[Download GEO & SEO Readiness MCP Server 2.1 on Gumroad ($49 Solo / $129 Agency White-Label)](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)**
-*(Launch special: Use code `WHETSTONE20` at checkout for 20% off)*
+```bash
+git clone https://github.com/alicexixi85/geo-seo-mcp-pro.git
+```
 
-- Live English Ecosystem & `llms.txt`: https://replay.usethelever.com/llms.txt
-- Support: `merciai@agent.qq.com`
+**Claude Desktop** (`claude_desktop_config.json`) / **Cursor** (`~/.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "geo-seo-readiness": {
+      "command": "python3",
+      "args": ["/absolute/path/to/geo-seo-mcp-pro/server.py"]
+    }
+  }
+}
+```
+
+**Docker**
+
+```bash
+docker build -t geo-seo-readiness-lite .
+docker run -i --rm geo-seo-readiness-lite
+```
+
+**One-off check in a terminal**
+
+```bash
+python3 server.py --check https://example.com
+```
+
+## Example prompts
+
+- "Run a quick readiness report for https://example.com and tell me the three fixes that matter most."
+- "Does my robots.txt block OAI-SearchBot or PerplexityBot on /pricing?"
+- "Is my canonical tag pointing somewhere it shouldn't?"
+
+## Limits (read before relying on results)
+
+- Checks the **initial HTML response** only. It does not execute JavaScript, so JSON-LD injected client-side is not seen (the tool tells you when the page looks like a JavaScript shell).
+- `robots.txt` is only one layer. A CDN or WAF (for example Cloudflare bot settings) can still block crawlers by user agent; verify those settings separately.
+- Refuses localhost and private network addresses. Public `http`/`https` URLs only.
+- Does not produce a single "score". Rankings and citations depend on much more than technical readiness.
+
+## Commercial edition
+
+This repository is the free, MIT-licensed Lite server. A separate paid edition (GEO & SEO Readiness MCP Server 2.1) adds headless-Chromium rendering for SPAs, weighted scoring, two-site competitor comparison, candidate `robots.txt` / `llms.txt` / JSON-LD patches and a white-label PDF report for agencies. A sample report from that edition is in [`GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf`](GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf); details and pricing are on [Gumroad](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro). The Lite server is complete on its own and does not require the paid edition.
+
+## License
+
+MIT. Built by [@alicexixi85](https://github.com/alicexixi85). Issues and pull requests welcome.
