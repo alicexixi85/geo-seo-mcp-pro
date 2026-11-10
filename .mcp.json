@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "geo-seo-readiness": {
+      "command": "python3",
+      "args": ["server.py"]
+    }
+  }
+}
