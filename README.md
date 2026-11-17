@@ -4,6 +4,15 @@ An open-source [Model Context Protocol](https://modelcontextprotocol.io) server 
 
 Ask your assistant *"Is example.com ready for AI search?"* and it runs five rule-based checks and returns a prioritized fix list. No API keys, no account, no dependencies beyond Python 3.10+.
 
+**Try it in 10 seconds (no MCP client needed):**
+
+```bash
+git clone https://github.com/alicexixi85/geo-seo-mcp-pro.git && cd geo-seo-mcp-pro
+python3 server.py --check https://your-site.com
+```
+
+Listed in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=geo-seo-mcp-pro) as `io.github.alicexixi85/geo-seo-mcp-pro` and on [Glama](https://glama.ai/mcp/servers/alicexixi85/geo-seo-mcp-pro).
+
 ## Tools
 
 | Tool | What it checks |
@@ -53,6 +62,19 @@ python3 server.py --check https://example.com
 - "Run a quick readiness report for https://example.com and tell me the three fixes that matter most."
 - "Does my robots.txt block OAI-SearchBot or PerplexityBot on /pricing?"
 - "Is my canonical tag pointing somewhere it shouldn't?"
+
+## Real example: it caught a bug on our own site
+
+We ran it against our own product pages. The landing page passed, but the free-trial URL failed two checks: its `canonical` and `og:url` pointed to a different host, because a deployment had silently replaced the page with the site's fallback homepage. Answer engines would have attributed that URL to the wrong page. The fix was a rollback; the check now passes.
+
+```text
+$ python3 server.py --check https://replay.usethelever.com/mds/en/trial
+FAIL  canonical points to another host (usethelever.com)
+FAIL  og:url points to another host (usethelever.com)
+WARN  no JSON-LD found in the initial HTML
+```
+
+Background on the five checks: [Is your site invisible to ChatGPT Search? Five checks you can run in a minute](https://dev.to/alicexixi85/is-your-site-invisible-to-chatgpt-search-five-checks-you-can-run-in-a-minute-1a18).
 
 ## Limits (read before relying on results)
 
