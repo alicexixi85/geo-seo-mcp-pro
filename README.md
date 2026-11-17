@@ -4,6 +4,8 @@ An open-source [Model Context Protocol](https://modelcontextprotocol.io) server 
 
 Ask your assistant *"Is example.com ready for AI search?"* and it runs five rule-based checks and returns a prioritized fix list. No API keys, no account, no dependencies beyond Python 3.10+.
 
+**No install? Try the free web version:** [AI Crawler Checker](https://usethelever.com/tools/ai-crawler-checker) runs the core checks in your browser.
+
 **Try it in 10 seconds (no MCP client needed):**
 
 ```bash
