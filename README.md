@@ -69,9 +69,12 @@ We ran it against our own product pages. The landing page passed, but the free-t
 
 ```text
 $ python3 server.py --check https://replay.usethelever.com/mds/en/trial
-FAIL  canonical points to another host (usethelever.com)
-FAIL  og:url points to another host (usethelever.com)
-WARN  no JSON-LD found in the initial HTML
+  "summary": {"PASS": 3, "WARN": 1, "FAIL": 2, "UNMEASURED": 0, "INFO": 0},
+  "fix_first": [
+    "[structured_data_and_canonical] FAIL: canonical points to another host (usethelever.com); answer engines may attribute this page elsewhere.",
+    "[structured_data_and_canonical] FAIL: og:url points to another host (usethelever.com); answer engines may attribute this page elsewhere.",
+    "[structured_data_and_canonical] WARN: no JSON-LD found in the initial HTML. ..."
+  ],
 ```
 
 Background on the five checks: [Is your site invisible to ChatGPT Search? Five checks you can run in a minute](https://dev.to/alicexixi85/is-your-site-invisible-to-chatgpt-search-five-checks-you-can-run-in-a-minute-1a18).
