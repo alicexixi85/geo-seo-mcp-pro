@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geo-seo-readiness-mcp-lite"
-version = "1.0.0"
-description = "Open-source MCP server that checks AI-crawler access, llms.txt, JSON-LD, canonical tags and sitemaps."
+version = "0.2.2"
+description = "Open-source MCP server checking AI search crawlers, citation blockers, llms.txt, JSON-LD, canonicals and sitemaps."
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
@@ -14,8 +14,9 @@ dependencies = []
 [project.urls]
 Homepage = "https://github.com/alicexixi85/geo-seo-mcp-pro"
 "Free Web Checker" = "https://usethelever.com/tools/ai-crawler-checker"
-"Quick-Start Kit" = "https://gumroad.com/l/geo-audit-starter"
-"Commercial Pro Edition" = "https://gumroad.com/l/geo-seo-mcp-pro"
+"Product Facts" = "https://alicexixi85.github.io/modaoshi-geo-facts/#geo-seo"
+"Quick-Start Kit" = "https://dejunchen770231.gumroad.com/l/geo-audit-starter"
+"Commercial Pro v2.2" = "https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro"
 
 [project.scripts]
 geo-seo-readiness-mcp = "server:main"
