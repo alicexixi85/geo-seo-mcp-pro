@@ -3,15 +3,21 @@
   "name": "io.github.alicexixi85/geo-seo-mcp-pro",
   "title": "GEO & SEO Readiness (Lite)",
   "description": "Checks robots.txt for AI search vs training crawlers, llms.txt, JSON-LD, canonicals and sitemaps.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "url": "https://github.com/alicexixi85/geo-seo-mcp-pro",
     "source": "github"
   },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.usethelever.com/geo-audit/mcp"
+    }
+  ],
   "packages": [
     {
       "registryType": "oci",
-      "identifier": "ghcr.io/alicexixi85/geo-seo-mcp-pro:0.1.0",
+      "identifier": "ghcr.io/alicexixi85/geo-seo-mcp-pro:0.2.0",
       "transport": {
         "type": "stdio"
       }
