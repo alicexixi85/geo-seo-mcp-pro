@@ -1,21 +1,14 @@
-# GEO & SEO Readiness MCP — Lite & v2.2 Pro
+# GEO & SEO Readiness MCP — Lite
 
-> Open-source, MIT-licensed Model Context Protocol server (Zero-Install Remote Streamable HTTP + local Python `stdio`) that checks whether a public website can be read and cited by AI search engines. Zero dependencies in Lite mode; full Playwright SPA + 5-file client patch kit + white-label A4 PDF workstation in v2.2 Pro.
-
-## Remote MCP Endpoint (Zero Install)
-- Streamable HTTP URL: https://mcp.usethelever.com/geo-audit/mcp
+> Open-source, MIT-licensed Model Context Protocol (stdio) server that checks whether a public website can be read and cited by AI search engines. Zero dependencies, Python 3.10+.
 
 ## Tools
 - [quick_readiness_report](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): runs all checks and returns a prioritized fix list
-- [check_ai_crawler_access](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): robots.txt rules for AI search crawlers, AI training crawlers, Googlebot, and Bingbot
+- [check_ai_crawler_access](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): robots.txt rules for AI search crawlers, AI training crawlers, Googlebot and Bingbot
 - [check_llms_txt](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): presence and structure of /llms.txt
 - [extract_structured_data](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): JSON-LD types, canonical and og:url host checks
 - [check_sitemap](https://github.com/alicexixi85/geo-seo-mcp-pro#tools): sitemap discovery and URL count
 
-## Links & Editions
-- [Source code (MIT)](https://github.com/alicexixi85/geo-seo-mcp-pro)
-- [Free Web AI Crawler Checker](https://usethelever.com/tools/ai-crawler-checker)
-- [Official Technical Product Facts (v2.2)](https://alicexixi85.github.io/modaoshi-geo-facts/#geo-seo)
-- [GEO Audit Quick-Start Kit ($9)](https://dejunchen770231.gumroad.com/l/geo-audit-starter)
-- [GEO & SEO Readiness MCP 2.2 Pro ($49 Solo / $129 Agency)](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)
-- Support: support@usethelever.com
+## Links
+- [Source code](https://github.com/alicexixi85/geo-seo-mcp-pro)
+- [Commercial edition (SPA rendering, competitor comparison, white-label PDF)](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)
