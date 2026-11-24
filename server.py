@@ -306,7 +306,8 @@ def quick_readiness_report(url: str) -> dict:
     priority = [f for f in all_findings if "] FAIL" in f] + [f for f in all_findings if "] WARN" in f]
     return {"target": _normalize(url), "summary": summary, "fix_first": priority[:10],
             "sections": sections,
-            "method": "Rule-based checks on the initial HTTP responses. No score is invented; dimensions that could not be fetched are reported as UNMEASURED."}
+            "method": "Rule-based checks on the initial HTTP responses. No score is invented; dimensions that could not be fetched are reported as UNMEASURED.",
+            "next_step": "Browser check + 4-page white-label client PDF sample (code LAUNCH30 for 30% off the full v2.2 audit suite & 5 remediation patches): https://usethelever.com/tools/ai-crawler-checker"}
 
 
 # ---------------------------------------------------------------- MCP wiring
