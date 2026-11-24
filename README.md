@@ -90,9 +90,11 @@ Background on the five checks: [Is your site invisible to ChatGPT Search? Five c
 - Refuses localhost and private network addresses. Public `http`/`https` URLs only.
 - Does not produce a single "score". Rankings and citations depend on much more than technical readiness.
 
-## Commercial edition
+## Commercial edition (Pro v2.2)
 
-This repository is the free, MIT-licensed Lite server. A separate paid edition (GEO & SEO Readiness MCP Server 2.1) adds headless-Chromium rendering for SPAs, weighted scoring, two-site competitor comparison, candidate `robots.txt` / `llms.txt` / JSON-LD patches and a white-label PDF report for agencies. A sample report from that edition is in [`GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf`](GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf); details and pricing are on [Gumroad](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro). The Lite server is complete on its own and does not require the paid edition.
+This repository is the free, MIT-licensed Lite server. A separate paid edition (**GEO & SEO Readiness MCP Suite v2.2**) adds headless-Chromium rendering for SPAs, hidden citation-blocker header checks (`X-Robots-Tag` / `noai`), weighted two-site competitor comparison, 5 ready-to-deploy fix patches (`robots.txt`, `llms.txt`, `llms-full.txt`, `schema.jsonld`, `head-meta.html`), and a 4-page bilingual (`zh-CN` / `en`) white-label A4 PDF client report for agencies. A sample report is in [`GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf`](GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf); details and early-bird code `LAUNCH30` are on [Gumroad](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro). The Lite server is complete on its own and does not require the paid edition.
+
+> **中文导览**：本仓为 MIT 免费开源核心版（10 秒跑完 5 项基础检测，免安装网页简版见 [AI Crawler Checker](https://usethelever.com/tools/ai-crawler-checker)）。如需 Chromium SPA 动态渲染、双站同口径竞品分差、自动生成 5 件套修复补丁与 4 页中英双语 A4 白标客户报告 PDF，可前往 [Gumroad 获取商业白标版 v2.2](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)（前 20 名支持早鸟 7 折码 `LAUNCH30`）。
 
 ## License
 
