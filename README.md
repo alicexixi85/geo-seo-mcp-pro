@@ -1,5 +1,7 @@
 # GEO & SEO Readiness MCP — Lite
 
+[![alicexixi85/geo-seo-mcp-pro MCP server](https://glama.ai/mcp/servers/alicexixi85/geo-seo-mcp-pro/badges/score.svg)](https://glama.ai/mcp/servers/alicexixi85/geo-seo-mcp-pro)
+
 An open-source [Model Context Protocol](https://modelcontextprotocol.io) server that checks whether a public website can be **read and cited by AI search engines** (ChatGPT Search, Perplexity, Claude) as well as classic search.
 
 Ask your assistant *"Is example.com ready for AI search?"* and it runs five rule-based checks and returns a prioritized fix list. No API keys, no account, no dependencies beyond Python 3.10+.
