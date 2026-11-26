@@ -2,7 +2,7 @@
 
 [![alicexixi85/geo-seo-mcp-pro MCP server](https://glama.ai/mcp/servers/alicexixi85/geo-seo-mcp-pro/badges/score.svg)](https://glama.ai/mcp/servers/alicexixi85/geo-seo-mcp-pro)
 
-🌐 **English** | **[简体中文文档（10 秒免费在线 GEO 体检 · 1 行命令开源版 · 4 页白标报告样例）](README_ZH.md)**
+🌐 **English** | **[简体中文说明与国内支付宝购买入口（无需外币卡）](README_ZH.md)**
 
 An open-source [Model Context Protocol](https://modelcontextprotocol.io) server that checks whether a public website can be **read and cited by AI search engines** (ChatGPT Search, Perplexity, Claude) as well as classic search.
 
@@ -96,7 +96,7 @@ Background on the five checks: [Is your site invisible to ChatGPT Search? Five c
 
 This repository is the free, MIT-licensed Lite server. A separate paid edition (**GEO & SEO Readiness MCP Suite v2.2**) adds headless-Chromium rendering for SPAs, hidden citation-blocker header checks (`X-Robots-Tag` / `noai`), weighted two-site competitor comparison, 5 ready-to-deploy fix patches (`robots.txt`, `llms.txt`, `llms-full.txt`, `schema.jsonld`, `head-meta.html`), and a 4-page bilingual (`zh-CN` / `en`) white-label A4 PDF client report for agencies. A sample report is in [`GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf`](GEO_SEO_MCP_2_1_Sample_4Page_Audit_Report.pdf); details and early-bird code `LAUNCH30` are on [Gumroad](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro). The Lite server is complete on its own and does not require the paid edition.
 
-> **中文导览**：本仓为 MIT 免费开源核心版（10 秒跑完 5 项基础检测，免安装网页简版见 [AI Crawler Checker](https://usethelever.com/tools/ai-crawler-checker)）。如需 Chromium SPA 动态渲染、双站同口径竞品分差、自动生成 5 件套修复补丁与 4 页中英双语 A4 白标客户报告 PDF，可前往 [Gumroad 获取商业白标版 v2.2](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)（前 20 名支持早鸟 7 折码 `LAUNCH30`）。
+> **中文用户直达**：本仓为 MIT 免费开源核心版（10 秒跑完 5 项基础检测）。如需完整工程版（Chromium SPA 动态渲染、隐形反收录阻断排查、5 份上线补丁与 4 页中文 A4 白牌报告，含**国内官网版**与**外贸独立站纯中文版**，适配豆包 / DeepSeek / Kimi），国内用户可直接走 **[支付宝 AI 付公开货架（君博AI实战技能工坊）](https://skillpay.alipay.com/public/junbo-skills)** 人民币一次买断，无需外币卡；详见 [简体中文说明](README_ZH.md)。海外美元支付见 [Gumroad Pro](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)。
 
 ## License
 

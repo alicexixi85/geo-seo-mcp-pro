@@ -56,11 +56,17 @@ python3 server.py --check https://你的出海域名.com
 | **自动生成 5 文件即装商业修复补丁包**（`robots.txt`、`llms.txt`、`llms-full.txt`、`schema.jsonld`、`head-meta.html`） | ❌ 仅诊断清单 | ✅ 一键生成可交付补丁包 |
 | **4 页中英双语（`zh-CN` / `en`）A4 白标客户 PDF 报告**（可直接交给客户做 SEO/AEO 提案） | ❌ 无 | ✅ 支持自定义机构 Logo 与交付 |
 
-👉 **需要给客户出白标报告或为出海独立站一次生成 5 件套修复补丁？**
-- 获取商业白标版 **Pro v2.2**（Solo 独立顾问版 `$49` / Agency 团队白标版 `$129`，一次买断无月费）：
-  - [**前往 Gumroad 官方商店（前 20 名自动应用 7 折早鸟码 `LAUNCH30`）**](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro/LAUNCH30)
-  - 原价入口：https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro
-- **出海独立站 / 机构定制诊断咨询**：如果你正卡在某个出海站或客户域名的 Cloudflare 403 误杀 / SPA 渲染抓取问题，欢迎直接发目标域名至 `support@usethelever.com` 或在本仓库提 Issue 交流。
+👉 **需要完整工程版（42 个文件、1,374 行实测源码 + 70 项自动测试、无头浏览器抓动态站、一键出 5 份上线补丁与 4 页中文 A4 白牌报告）？**
+
+### 🇨🇳 国内用户直购入口（支付宝 AI 付 SkillPay · 人民币一次买断，无需外币卡）
+直接访问公开货架：**[君博AI实战技能工坊（支付宝 AI 付 SkillPay）](https://skillpay.alipay.com/public/junbo-skills)**
+- **国内官网版**：`问豆包总推同行？查清AI为啥不搜你官网`（适配 **豆包、DeepSeek、Kimi、通义千问、百度 AI 搜索**，适合国内企业官网、工厂站、软件站、个人独立站）
+- **跨境外贸独立站纯中文版**：`做外贸独立站没客流？纯中文查清原因`（**全中文操作说明**，专测 Shopify、外贸 B2B 独立站与 8 大海外托管单品页，英文不熟也能 3 分钟上手）
+- 支持零安装直接导入豆包 / DeepSeek / Kimi 对话体检，也内置跨平台完整本地 Python 引擎源码可本地部署出 PDF 报告。
+
+### 🌍 海外美元支付用户（Gumroad）
+- [前往 Gumroad 商店（Solo / Agency 美元版）](https://dejunchen770231.gumroad.com/l/geo-seo-mcp-pro)
+- **定制诊断咨询**：如果你正卡在某个官网或独立站的隐形反收录阻断 / SPA 渲染抓取问题，欢迎发目标域名至 `support@usethelever.com` 或在本仓库提 Issue 交流。
 
 ---
 
